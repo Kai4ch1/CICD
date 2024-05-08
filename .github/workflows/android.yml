@@ -27,3 +27,9 @@ jobs:
       with:
         name: app
         path: app/build/outputs/apk/debug/app-debug.apk
+    - name: Check Gradlew Permissions
+      run: ls -l ./gradlew
+    - name: Check dos2unix Installation
+      run: dos2unix --version
+    - name: List APK Output Directory
+      run: ls -l app/build/outputs/apk/debug/
